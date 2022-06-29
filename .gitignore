@@ -1,0 +1,8 @@
+vk-hosting-config.json
+build.zip
+package.json
+package-lock.json
+vk-hosting-config.json
+build/
+node_modules/
+.vscode/
