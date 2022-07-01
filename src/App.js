@@ -8,9 +8,10 @@ import Home from './panels/Home';
 import Persik from './panels/Persik';
 
 const App = () => {
-	//console.log(App) 			<PanelHeader>Input</PanelHeader>
 
 	const textInput = React.createRef();
+
+	bridge.send("VKWebAppGetClientVersion").then(x => console.log(x))
 	const clear = () => (textInput.current.value = "");
 	return (
 		<Panel id="input">
@@ -38,14 +39,4 @@ const App = () => {
 		);
 }
 
-
-const Br = () => {
-	//bridge.send("VKWebAppGetClientVersion");
-	return(
-		console.log(App)
-	);
-}
-
 export default App;
-//module.exports = {Br}
-export {Br};
